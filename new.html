@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boootstrap &es6 project</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">إدارة المستخدمين</h2>
+
+  <!-- Add User Form -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row g-2">
+        <div class="col-md-4">
+          <input id="name" class="form-control" placeholder="اسم المستخدم">
+        </div>
+        <div class="col-md-4">
+          <input id="email" class="form-control" placeholder="البريد الإلكتروني">
+        </div>
+        <div class="col-md-4">
+          <button id="addBtn" class="btn btn-success w-100">
+            إضافة مستخدم
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Users List -->
+  <div class="row" id="users"></div>
+</div>
+
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
